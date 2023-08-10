@@ -1,17 +1,25 @@
-# Hello Spring Docker Example
+# Hello Spring Boot Docker Example
 
-This repository contains a simple Java project that demonstrates how to build and run a Spring application within a Docker container using a multistage build approach. 
-The project exposes an endpoint `/hello` on port 8080, which can be accessed via a web browser after the Docker container is up and running.
+This repository contains a simple Java project demonstrating how to build (with Maven) and run a Spring application within a Docker container using a multistage build approach. 
+The project exposes an endpoint `/hello` on port 8080, which can be accessed via a web browser after running the Docker container.
 
 ## Prerequisites
 
-- **Docker**: Make sure you have Docker installed and run on your machine.
+- **Docker**: Ensure you have Docker installed and run on your machine.
+
+## Technologies
+
+- Java 17
+- Spring Boot
+- Spring Web
+- Maven
+- Docker
 
 ## Getting Started
 
 Follow these steps to build and run the project in a Docker container.
 
-1. Build image:
+1. Build the image:
 
    ```sh
     docker build -t hello-spring .
